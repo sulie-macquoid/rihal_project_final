@@ -1,0 +1,23 @@
+all work is done by Sulieman Al Harthy, yours truly
+
+HOW TO MAKE THE CODE WORK:
+
+firstly, download all required libraries, which are:
+    1-pytesseract
+    2-opencv-python
+    3-RegEx
+    4-datetime
+next, for the pytesseract OCR to work, go to:
+https://github.com/UB-Mannheim/tesseract/wiki
+and download the tesseract.exe file that corresponds to your system type (32 bit or 64 bit)
+
+replace line 6 with the directory of the tesseract.exe file you downloaded
+
+after that, you should be good to go. thank you!
+
+METHODOLOGY:
+
+all of the methodology is included in the detailed comments on each line. enjoy the file!
+
+
+-Sulieman Al Harthy at 23:00 07/01/2022
