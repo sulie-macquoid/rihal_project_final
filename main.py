@@ -3,7 +3,7 @@ import cv2 #opencv to deal with the image, making it pop up and interact with th
 import re #RegEx
 from datetime import datetime #datetime to reformat the dates into a YYYY-MM-DD basis
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nowax\tesseract\tesseract.exe' #imports tesseract library from hard drive
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nowax\tesseract\tesseract.exe' #imports tesseract library from hard drive (replace this line with the directory begining from C:)
 
 img = cv2.imread('ocr.png') #converts the png into a file the program can deal with
 img = cv2.resize(img, (700, 700)) #resizes the image into a size that is clear to read by the OCR lib
