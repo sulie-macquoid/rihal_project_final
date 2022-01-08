@@ -2,6 +2,7 @@ all work is done by Sulieman Al Harthy, yours truly
 
 HOW TO MAKE THE CODE WORK:
 
+code is done in python
 firstly, download all required libraries, which are:
     1-pytesseract
     2-opencv-python
@@ -16,8 +17,7 @@ replace line 6 with the directory of the tesseract.exe file you downloaded
 after that, you should be good to go. thank you!
 
 METHODOLOGY:
+firstly a flowchart was done (https://drive.google.com/file/d/1TTqX_8EW9l7bK6rD3UfBNaZFi78z6_I3/view?usp=sharing) and then the coding started
+reasons as to why specific lines of code were writen are detaailed in the comments avaliable on almost every line. enjoy the code!
 
-all of the methodology is included in the detailed comments on each line. enjoy the file!
-
-
--Sulieman Al Harthy at 23:05 07/01/2022
+-Sulieman Al Harthy at 00:09 07/01/2022
