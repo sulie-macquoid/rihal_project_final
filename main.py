@@ -23,11 +23,11 @@ emails = [] #emails
 
 datesO = re.findall(r'[0-9]+[0-9]+\/+[0-9]+[0-9]+\/+[0-9]+[0-9]+[0-9]+[0-9]', string) #finds all characters with the
 # XX/XX/XXXX format, X being a number
-for x in datesO: #implements the datetime library
-    y = datetime.strptime(x, '%d/%m/%Y')
+for x in datesO: 
+    y = datetime.strptime(x, '%d/%m/%Y') #implements the datetime library
     dateTimeA.append(y) #adds the result to the dateTimeA array
-for x in dateTimeA: #converts the results from the previous array to the format YYYY-MM-DD
-    y = x.strftime('%Y-%m-%d')
+for x in dateTimeA: 
+    y = x.strftime('%Y-%m-%d') #converts the results from the previous array to the format YYYY-MM-DD
     datesN.append(y) #adds them to the final list
 #the desired outputs for dates were achived
 
@@ -38,14 +38,14 @@ for x in roomNO: #will remove the "Room: " infront of the string
 #the desired outputs for room names were achived
 
 roomRO = re.findall(r'\$([0-9,]+)', string) #finds all the numbers that have a dollar sign before them
-for x in roomRO: #will add a dollar sign infront of the numbers, since they aren't added from the previous line
-    y = "${:}".format(x)
+for x in roomRO: 
+    y = "${:}".format(x) #will add a dollar sign infront of the numbers, since they aren't added from the previous line
     roomRN.append(y) #adds all of the numbers, with the dollar sign infront
 #the desired outputs for room rates were achived
 
 namesO = re.findall(r'[:;]\s*(.+?)\s*<', string) #finds all words that follow a semicolon or a colon, and ends with a >
 for x in namesO: #will format the names to a FIRSTNAME LASTNAME basis
-    for lname, fname in [q.split(",") for q in x.split(";")]:
+    for lname, fname in [q.split(",") for q in x.split(";")]: #splits the string into two sections called fname lname
         a = fname[1:] #erases the first char of fname, which is a whitespace
         b = len(lname)+1
         c = lname.rjust(b) #adds a space infront of lname, to seperate them
@@ -55,8 +55,9 @@ for x in namesO: #will format the names to a FIRSTNAME LASTNAME basis
 
 emails = re.findall(r'[\w\.-]+@[\w\.-]+', string) #finds the words that have a . after them, then an @ symbol, then
 # another word that ends with a .
+#the desired outputs for emails were achived
 
-# print(string) #print the entire string
+print(string) #print the entire string
 
 print(datesN)
 print(roomNN)
